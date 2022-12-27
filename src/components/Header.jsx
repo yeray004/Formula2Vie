@@ -2,7 +2,7 @@ import './Header.css'
 import logoFormula2Vie from './img/logoFormula2Vie.png'
 import shoppingCar from './img/shoppingCar.png'
 
-//sssw
+//Import link routes
 import { Link } from 'react-router-dom'
 
 function Header() {

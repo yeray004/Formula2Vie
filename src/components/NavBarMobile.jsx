@@ -4,33 +4,36 @@ import people from './img/people.png'
 import bottle from './img/bottle.png'
 import shoppingCar from './img/shoppingCar.png'
 
+//Import link routes
+import { Link } from 'react-router-dom'
+
 function NavBarMobile() {
     return (
         <nav className='nav-mobile'>
             <ul  className='ul-nav'>
                 <li className='li-nav'>
-                    <a href="" className='center-img-p'>
+                    <Link to='/' className='center-img-p'>
                         <img src={home} alt="" className='nav-img'/>
                         <p className='nav-text'>Inicio</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='li-nav'>
-                    <a href="" className='center-img-p'>
+                    <Link to='/nosotros' className='center-img-p'>
                         <img src={people} alt="" className='nav-img'/>
                         <p className='nav-text'>Nosotros</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='li-nav'>
-                    <a href="" className='center-img-p'>
+                    <Link to='/productos' className='center-img-p'>
                         <img src={bottle} alt="" className='nav-img'/>
                         <p className='nav-text'>Productos</p>
-                    </a>
+                    </Link>
                 </li>
                 <li  className='li-nav'>
-                    <a href="" className='center-img-p'>
+                    <Link to='/carrito' className='center-img-p'>
                         <img src={shoppingCar} alt="" className='nav-img'/>
                         <p className='nav-text'>Carrito</p>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
