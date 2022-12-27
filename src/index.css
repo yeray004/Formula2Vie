@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --color-cream: #FFEFE1;
+  --color-light-cream: #FFFFEE;
+  --color-periwinkle: #CACAFF;
+  --color-pale-pink: #FFCCDC;
+  --color-mint-green: #ABFFCD;
+  --color-light-brown: #D3B294;
+  --color-brown: #503925;
+  --color-gold-linear: linear-gradient(to bottom, #CC9932, #F5C46B, #F4DD94, #EEC664);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  padding-bottom: 3.8em;
+  min-height: calc(100vh - 87px);
+}
+h1, h2, h3{
+  font-family: 'Cookie', cursive;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  font-weight: bolder;
+  color: black;
+}
+p{
+  margin: 0%;
+}
+.main{
+  margin: 87px 0px 0px;
+}
+@media (max-width: 768px) {
+  body {
+    /* Footer */
+    min-height: calc(100vh - 146px);
+  }
+  .main {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    /* Footer */
+    min-height: calc(100vh - 136px);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    /* Footer */
+    min-height: calc(100vh - 134px);
+  }
 }

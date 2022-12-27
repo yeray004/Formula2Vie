@@ -1,0 +1,238 @@
+/* CARROUSEL */
+.carousel-item {
+    position: relative;
+    height: 400px;
+    display: flex !important;
+    align-items: center;
+}
+.hover-carousel {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.img-logo-carousel {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bknd-button-catalogue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    background: rgb(124, 124, 124);
+    background: linear-gradient(180deg, rgba(124, 124, 124, 1) 0%, rgba(147, 147, 147, 0.8631049832042192) 30%, rgba(255, 255, 255, 0) 100%);
+}
+.button-catalogue {
+    margin-top: 2%;
+    padding: 0% 6%;
+    border-radius: 5px;
+    background: none;
+    transition: ease-in-out .3s;
+}
+.button-catalogue:hover {
+    color: var(--color-brown);
+    background: rgba(80, 57, 37, .3);
+    border: 2px solid var(--color-brown);
+}
+/* MAIN DESCRIPTION */
+.main-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3% 0%;
+}
+.title-description {
+    display: flex;
+    justify-content: center;
+}
+.desctription-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.text-description {
+    width: 370px;
+    margin: 2% 4%;
+    font-size: .9em;
+}
+.img-description {
+    width: 370px;
+    height: 170px;
+    background-image: url(./imgInicio/inicio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+/* TYPE OF PRODUCTS */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr  0.7fr 1.3fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1%;
+    grid-template-areas:
+        "div2 div2 div1"
+        "div2 div2 div3";
+    margin: 0% 4%;
+    justify-content: center;
+}
+.div1 {
+    grid-area: div1;
+    height: fit-content;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.div2 {
+    grid-area: div2;
+    display: flex;
+    justify-content: center;
+}
+.div3 {
+    grid-area: div3;
+    height: fit-content;
+    margin: 2% 6%;
+    font-size: .9em;
+    text-align: justify;
+}
+.img-grid1, .img-grid2, .img-grid3{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-grid1{
+    background-image: url(./imgInicio/inicio2.jpg);
+}
+.img-grid2{
+    background-image: url(./imgInicio/inicio3.jpg);
+}
+.img-grid3{
+    background-image: url(./imgInicio/inicio4.jpg);
+}
+.grid-img-text{
+    margin: 0%;
+    position: absolute;
+    font-size: 2.5em;
+    color: white;
+}
+.img-grid1::before, .img-grid2::before, .img-grid3::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.button-products{
+    display: flex;
+    justify-content: center;
+}
+/* ADVANTAGES */
+.advantages{
+    width: 100%;
+    height: 300px;
+    margin: 3% 0%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./imgInicio/inicio5.jpg);
+}
+.advantages::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.advantages-tittle, .advantages-ul-cont{
+    top: 10%;
+    position: absolute;
+}
+.advantages-ul-cont{
+    top: 30%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    font-size: clamp(.7em, 2vw, 1em);;
+}
+.advantages-ul-cont ul{
+    padding-left: 1.5em;
+    margin: 0%;
+}
+.advantages-ul{
+    width: 350px;
+}
+@media (max-width: 768px) {
+    .carousel-item {
+        position: relative;
+        height: 200px;
+        display: flex !important;
+        align-items: center;
+    }
+    .img-logo-carousel {
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-catalogue {
+        margin-top: 3%;
+    }
+    /* MAIN DESCRIPTION */
+    .text-description {
+        width: 300px;
+        margin: 2%;
+        font-size: .9em;
+    }
+    .img-description {
+        width: 250px;
+        height: 150px;
+    }
+    /* TYPE OF PRODUCTS */
+    .parent {
+        grid-template-areas:
+            "div1 div1 div1"
+            "div2 div2 div2"
+            "div3 div3 div3";
+        margin: 0% 0%;
+    }
+    .div3{
+        margin: 4% 10%;
+    }
+    /* ADVANTAGES */
+    .advantages-ul{
+        width: auto;
+    }
+}
+@media (max-width: 425px) {
+    .text-description {
+        width: 300px;
+        margin-bottom: 4%;
+        font-size: .9em;
+    }
+    .grid-img-text{
+        font-size: 2em;
+    }
+    .img-description {
+        width: 100%;
+        height: 150px;
+    }
+}

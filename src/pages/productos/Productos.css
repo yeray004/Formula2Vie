@@ -1,0 +1,51 @@
+/* CATALOGUE */
+.catalogue{
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.catalogue h1{
+    font-size: 3em;
+    margin: 1.5%;
+    padding: 5px 10%;
+    background-color: var(--color-light-brown);
+}
+.catalogue h1, .catalogue div{
+    display: flex;
+    justify-content: center;
+}
+.category a{
+    margin: 0% 2%;
+    padding: 3px 70px;
+    border: 2px solid var(--color-light-brown);
+    border-radius: 5px;
+    background-color: var(--color-cream);
+    transition: ease-in-out .2s;
+}
+.category a:hover{
+    font-weight: 400;
+    background-color: var(--color-light-brown);
+}
+/* PRODUCT CARDS */
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% 5%;
+}
+.cards-container{
+    margin-bottom: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .category a{
+        margin: 0% 1%;
+        padding: 7px 22px;
+    }
+}

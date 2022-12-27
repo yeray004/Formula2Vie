@@ -1,0 +1,109 @@
+/* QUIENES SOMOS */
+.img-quienes-somos{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img-nosotros/nosotros-1.jpg);
+}
+.img-quienes-somos::before, .img-our-history::before, .myv-card1::before, .myv-card2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.img-our-history::before{
+border-radius: 20px;
+}
+.img-quienes-somos h1{
+    position: absolute;
+    color: white;
+    font-size: 3.7em;
+}
+/* OUR HISTORY */
+.our-history{
+    margin: 3% 0%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.img-our-history{
+    position: relative;
+    width: 300px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img-nosotros/nosotros-2.jpg);
+    border-radius: 20px;
+}
+.logo-our-history{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
+.text-our-history{
+    width: 50%;
+    padding: 1% 5% 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.text-our-history h1{
+    display: flex;
+    justify-content: center;
+}
+/* MISION & VISION */
+.myv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.myv-card1, .myv-card2{
+    position: relative;
+    width: 500px;
+    height: 270px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.myv-card1{
+    background-image: url(./img-nosotros/nosotros-3.jpg);
+}
+.myv-card2{
+    background-image: url(./img-nosotros/nosotros-4.jpg);
+}
+.myv-card-text{
+    position: absolute;
+    padding: 0% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.myv-card-text h1{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .img-quienes-somos{
+        height: 100px;
+    }
+    .text-our-history{
+        width: 90%;
+    }
+}
