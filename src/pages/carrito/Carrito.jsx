@@ -12,9 +12,9 @@ return (
     <main className="main main-car">
         <section className='container-carrito'>
             <div className='p-car-container'>
-                <img src={test} alt="" className='img-card'/>
+                <img src={test} alt="" className='img-card-car'/>
                 <div className='flex-container'>
-                    <p>{`Nombre del producto $ {}`}</p>
+                    <p>{`Nombre del producto asdadad $ {}`}</p>
                     <div className='flex-sub-cont'>
                         <div>
                             <p>{`Categoría $ {}`}</p>
@@ -29,7 +29,7 @@ return (
                         </div>
                     </div>
                 </div>
-                <a href="" className='delete-product'>X</a>
+                <button className='delete-product'>X</button>
             </div>
         </section>
         <section className='section-car-total'>

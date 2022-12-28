@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1.1,
+    "name": "CREMA PARA PEINAR REPASADORA 360ml",
+    "category": "Capilar",
+    "description": "Facilita el peinado del cabello, dejándolo sedoso, brillante, manejable y con mucho brillo. El aceite de argán repara las puntas abiertas y secas ya que es rica en nutriuntes y muy hidratante, gracias a las vitaminas A, C y E que contiene. La vitamina E, en concreto, hace que el pelo se vea sano, brillante y con movimiento. El aceite de chontaduro provee hidratación profunda a las fibras capilares.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1iaVrLl0bdQ28sbG0-7yxYLDQgAXsVqkj"
+  },
+  {
+    "id": 1.2,
+    "name": "SHAMPOO DETOX 500ml",
+    "category": "Capilar",
+    "description": "Mixtura con propiedades astringentes y antisépticas que ayudan a controlar la producción excesiva de grasa. Limpia profundamente el cabello y cuero cabelludo. Elimina y controla el exceso de grasa. Deja tu cabello suave y ligero. Proporciona Resistencia, fuerza y flexibilidad. Contiene extractos naturales de Bardana, Ají, Limón, Tomillo, Capuchina, Ortiga, además de aportar una limpieza profunda ayudará al crecimiento capilar.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1I1COClpgxljhC9TJdWRGeV9OPLBTBtUt"
+  },
+  {
+    "id": 1.3,
+    "name": "TRATAMIENTO DETOX 500ml",
+    "category": "Capilar",
+    "description": "Tratamiento que permite purificar el cabello de los residuos de productos acumulados, polución y suciedad en el ambiente, células muertas, sudor y grasa. Es una pausa en la rutina diaria para que el cabello descanse; se fortalezca, recupere brillo y suavidad.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1CgeeR0fY_N2bSe6hsQS1JvI6LTRIkytK"
+  },
+  {
+    "id": 1.4,
+    "name": "SHAMPOO FRUTAL 500ml",
+    "category": "Capilar",
+    "description":"Shampoo Frutal para cabellos mixtos, contiene extracto de mango, mandarina, durazno y fresa; brinda saluc, vitalidad, brillo y suavidad a su cabello.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1sXOL-45NTSWtRocdaUJctd629Jr_Hx3n"
+  },
+  {
+    "id": 1.5,
+    "name": "JALEA FRUTAL 500ml",
+    "category": "Capilar",
+    "description": "Tratamiento nutritivo completo que contribuye en el proceso de reconstrucción del cabello maltratado, restableciendo la hidrofobicidad perdida. Su fragancia es deliciosa. Hecho a base de Frutas e ingredientes naturales: Banano, Papaya,Piña, Romero, aloe vera.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1W9tgCNdBQ6cfCcvymubbjeMl2wWWEtay"
+  },
+  {
+    "id": 1.6,
+    "name": "SHAMPOO CRECIMIENTO INTENSIVO 500ml",
+    "category": "Capilar",
+    "description": "Shampoo enriquecido con extracto de cebolla y miel, estimula el crecimiento y evita la caída del cabello, por su alto contenido en azufre, regenera el crecimiento de los folículos pilosos, su uso adecuado y constante brinda resultados efectivos.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1OJ9E9UXKCE3MqqEHEGuOY0mAipGU4hU4"
+  },
+  {
+    "id": 1.7,
+    "name": "TRATAMIENTO CRECIMIENTO INTENSIVO 500ml",
+    "category": "Capilar",
+    "description": "Estimula el crecimiento y engrosamiento de tu cabello por su alto porcentaie de extracto de cebolla conjugado con la gran hidratación que proporciona la miel. Complementa su formulación con aminoácidos de arroz y aceite de argán. Estimula la circulación del cuero cabelludo favoreciendo la producción de queratina,. Gracias a la miel que tiene propiedades antioxidantes y astringentes protege el cabello. Proporciona brillo, suavidad y nutrición capilar.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1I05wZ0KGCBssEZUR1hT-ez7VjE2aeHHP"
+  },
+  {
+    "id": 1.8,
+    "name": "MASCARILLA HIDRATANTE DE COCO 360ml",
+    "category": "Capilar",
+    "description": "Mascarilla capilar con aceite de coco, aminoácidos y vitamina E, aportan nutrición, hidratación y vitalidad. Ideal para todo tipo de cabello, con propiedades antienvejecimiento y retención de la humedad para regenerar la fibra capilar.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1PcfGCyG0ZuuIZ_rUKtkM5hqKMdVSQFQS"
+  },
+  {
+    "id": 2.1,
+    "name": "ACEITE CANNABIS 150ml",
+    "category": "Corporal",
+    "description": "Proporciona nutrientes esenciales ayudando a calmar y relajar el cuerpo generando una sensación de bienestar. Es ideal en masajes musculares, relajantes y/o masajes en general.",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=1n48rJTNnJ_DiEpydFW9Px64uBTJc8_GE"
+  },
+  {
+    "id": 2.2,
+    "name": "ACEITE RELAJANTE MUSCULAR 150ml",
+    "category": "Corporal",
+    "description": "Desarollado a base de 10 aceites Y extractos naturales. El aceite de menta, Caléndula y eucalipto son un potente anti inflamatorio que ayuda a relajar y refrescar estimulando la circulación de la piel. Cuenta con propiedades analgésicas y se usa como relajante muscular",
+    "price":50000,
+    "image": "https://drive.google.com/uc?export=view&id=16VvCDyZE1NXOBtDPQ5MPlRbw8_mSfr2n"
+  }
+]

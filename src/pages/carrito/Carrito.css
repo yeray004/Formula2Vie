@@ -23,7 +23,7 @@
     border-radius: 5px;
 }
 /* IMG CAR */
-.img-card{
+.img-card-car{
     width: 160px;
     height: 120px;
     border-radius: 5px;
@@ -64,6 +64,8 @@
     right: 2%;
     top: 7%;
     background-color: white;
+    align-items: center;
+    display: flex;
 }
 /* CARD PURCHASE */
 .car-total{
@@ -109,7 +111,7 @@
         padding: 1%;
         border-radius: 3px;
     }
-    .img-card{
+    .img-card-car{
         width: 130px;
         height: 90px;
     }
@@ -139,7 +141,7 @@
     }
 }
 @media (max-width: 425px) {
-    .img-card{
+    .img-card-car{
         width: 100px;
         height: 90px;
     }

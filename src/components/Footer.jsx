@@ -8,13 +8,13 @@ function Footer() {
 return (
     <footer>
         <div>
-            <a href=""><img src={TIKTOK} alt="TikTok" className='img-footer'/></a>
-            <a href=""><img src={IG} alt="Instagram" className='img-footer'/></a>
-            <a href=""><img src={FACE} alt="Facebook" className='img-footer'/></a>
+            <a href="https://www.tiktok.com/@formula2vie?_t=8UVVkDSvBQr&_r=1"><img src={TIKTOK} alt="TikTok" className='img-footer'/></a>
+            <a href="https://instagram.com/labformula2vie?igshid=OGQ2MjdiOTE="><img src={IG} alt="Instagram" className='img-footer'/></a>
+            <a href="https://www.facebook.com/profile.php?id=100063189462974"><img src={FACE} alt="Facebook" className='img-footer'/></a>
         </div>
         <div className='container-2'>
             <p className='footer-text'>© <b>2022 Formula2Vie | Diseñado por Yeray Guachetá</b></p>
-            <img src={yerayGuacheta} alt="Logo Yeray Guachetá"  className='img-footer-2'/>
+            <img src={yerayGuacheta} alt="Logo Yeray Guachetá" className='img-footer-2'/>
         </div>
     </footer>
 )}

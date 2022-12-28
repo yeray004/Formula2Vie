@@ -8,6 +8,8 @@ import logoLabFormula2VieWht from './imgInicio/logoLabFormula2VieWht.png'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import NavBarMobile from '../../components/NavBarMobile'
+//Import link navegation router
+import { Link } from 'react-router-dom'
 
 
 function Inicio() {
@@ -26,7 +28,7 @@ return (
                 </div>
                 <div className="carousel-item">
                     <div className="hover-carousel">
-                        <img src={logoFormulaWht} className="img-logo-carousel" />
+                        <img src={logoFormulaWht} className="img-logo-carousel" alt="LogoFormula2Vie"/>
                     </div>
                     <img src={carousel2} className="d-block w-100" alt="..." />
                 </div>
@@ -48,7 +50,9 @@ return (
         </section>
         {/* BUTTON "VER CATÁLOGO" */}
         <div className="bknd-button-catalogue">
-            <button className="button-catalogue">VER CATÁLOGO</button>
+            <Link to='/productos'>
+                <button className="button-catalogue">VER CATÁLOGO</button>
+            </Link>
         </div>
         {/* MAIN DESCRIPTION */}
         <section  className="main-description">
@@ -75,7 +79,9 @@ return (
             <div class="div3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
         </section>
             <div className='button-products'>
-                <button className='button-catalogue'>PRODUCTOS</button>
+                <Link to='/productos'>
+                    <button className='button-catalogue'>PRODUCTOS</button>
+                </Link>
             </div>
         {/* ADVANTAGE */}
         <section className='advantages'>

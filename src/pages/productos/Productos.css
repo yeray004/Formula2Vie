@@ -16,15 +16,15 @@
     display: flex;
     justify-content: center;
 }
-.category a{
+.category button{
     margin: 0% 2%;
     padding: 3px 70px;
-    border: 2px solid var(--color-light-brown);
     border-radius: 5px;
+    border: 2px solid var(--color-light-brown);
     background-color: var(--color-cream);
     transition: ease-in-out .2s;
 }
-.category a:hover{
+.category button:hover{
     font-weight: 400;
     background-color: var(--color-light-brown);
 }
@@ -47,5 +47,9 @@
     .category a{
         margin: 0% 1%;
         padding: 7px 22px;
+    }
+    .category button{
+        margin: 0% 2%;
+        padding: 3px 5%;
     }
 }

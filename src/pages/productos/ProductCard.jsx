@@ -1,24 +1,26 @@
 import './ProductCard.css'
-import cremaParaPeinarRepasadora from '../nosotros/img-nosotros/cremaParaPeinarRepasadora.jpg'
+
 import addBtn from '../nosotros/img-nosotros/addBtn.png'
 
-function ProductCard() {
+function ProductCard(props) {
 return (
-<div className='product-card'>
-    <div><h4 className='tittle-card'>nombre del producto as asdadasd a</h4></div>
+<div className='product-card' key={props.id}>
+    <div><h4 className='tittle-card'>{props.name}</h4></div>
     <div className='description-card'>
-        <img src={cremaParaPeinarRepasadora} alt="" className='img-card'/>
-        <p className='text-description-card'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate maiores cum nihil quod nesciunt? Hic eum vitae nemo pariatur libero, ab ex nostrum neque amet ut eaque id animi cum.</p>
+        <div className='img-card'>
+        <img src={props.image} alt="Imagen del producto" className='img-card'/>
+        </div>
+        <p className='text-description-card'>{props.description}</p>
     </div>
     <div className='price'>
         <div>
-            <p>Categoría</p>
-            <p>$ 00.000</p>
+            <p>{props.category}</p>
+            <p>$ {props.price}</p>
         </div>
         <div>
-            <a href="">
+            <button>
                 <img src={addBtn} alt="" className='add-car'/>
-            </a>
+            </button>
         </div>
     </div>
 </div>

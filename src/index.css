@@ -16,6 +16,20 @@ body {
   padding-bottom: 3.8em;
   min-height: calc(100vh - 87px);
 }
+body::-webkit-scrollbar{
+  width: 7px;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 0px 0px 5px 5px;
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: var(--color-gold-linear);
+}
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
 h1, h2, h3{
   font-family: 'Cookie', cursive;
 }
@@ -34,6 +48,9 @@ p{
   margin: 87px 0px 0px;
 }
 @media (max-width: 768px) {
+  body::-webkit-scrollbar{
+    width: 0px;
+  }
   body {
     /* Footer */
     min-height: calc(100vh - 146px);

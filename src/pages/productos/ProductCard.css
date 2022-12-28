@@ -1,6 +1,6 @@
 .product-card{
     width: 300px;
-    height: 380px;
+    height: 340px;
     margin: 1%;
     padding: 2%;
     background-color: var(--color-cream);
@@ -11,7 +11,7 @@
     align-content: space-around;
 }
 .tittle-card{
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     font-size: 1.1em;
     font-weight: bold;
     text-transform: uppercase;
@@ -19,10 +19,11 @@
 }
 .description-card{
     display: flex;
+    align-items: center;
 }
 .img-card{
-    width: 120px;
-    height: 200px;
+    width: 100px;
+    height: 120px;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -36,6 +37,7 @@
 }
 .text-description-card::-webkit-scrollbar{
     width: 5px;
+    height: 0px;
 }
 .text-description-card::-webkit-scrollbar-track{
     background: white;
@@ -50,6 +52,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.price button{
+    background: none;
+    border: 0px;
+    border-radius: 50%;
 }
 .add-car{
     width: 37px;
