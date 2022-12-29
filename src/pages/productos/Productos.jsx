@@ -15,12 +15,13 @@ function Productos() {
     const[data, setData] = useState(products);
 
     const filterResult = (catItem)=>{
-        const result = products.filter((curDate)=>{
-            return curDate.Productos === catItem;
-        });
-        setData(result)
-    }
-
+        const result = products.filter(
+            curDate=>curDate.Productos === catItem
+            );
+            setData(result)
+            console.log(result)
+        }
+        
 return (
     <>
     <Header/>

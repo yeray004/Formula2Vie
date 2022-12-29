@@ -59,7 +59,7 @@ p{
     margin-top: 70px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 125px) {
   body {
     /* Footer */
     min-height: calc(100vh - 136px);

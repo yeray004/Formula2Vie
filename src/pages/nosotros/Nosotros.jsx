@@ -39,6 +39,9 @@ return (
             </div>
         </div>
         </section>
+        <section>
+            <iframe width="320" height="440" src="https://instagram.com/labformula2vie?igshid=OGQ2MjdiOTE=" frameborder="0"></iframe>
+        </section>
     </main>
     <Footer/>
     <NavBarMobile/>
