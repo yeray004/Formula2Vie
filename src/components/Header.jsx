@@ -17,7 +17,7 @@ return (
                 </ul>
             </div>
             <img src={logoFormula2Vie} alt="LogoFormula2Vie" className="img-header1" />
-{/*             <div><Link to='/carrito'><img src={shoppingCar} alt="Carrito" className="img-header2" /></Link></div> */}
+            <div><Link to='/carrito'><img src={shoppingCar} alt="Carrito" className="img-header2" /></Link></div>
         </div>
     </header>
 )}

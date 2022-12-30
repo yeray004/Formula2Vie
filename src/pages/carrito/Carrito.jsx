@@ -13,6 +13,15 @@ function Carrito() {
     const cart = useSelector((state) => state)
     console.log(cart)
     const dispatch = useDispatch()
+    
+    const addition = (acc, currentValue)=>{
+        return acc + currentValue.price * currentValue.quantity
+    }
+    const total=cart.reduce(addition, 0) 
+    
+    let totalItems = 0;
+    //Total
+    cart.map((products)=>{totalItems += products.quantity});
     return (
         <>
             <Header />
@@ -26,26 +35,34 @@ function Carrito() {
                             <div className='flex-sub-cont'>
                                 <div>
                                     <p>{product.category}</p>
-                                    <p>{`$ ${product.price}`}</p>
+                                    <p>$ {product.price * product.quantity}</p>
                                 </div>
                                 <div className='cont-buttons'>
-                                    <button className='btn-add-sub'>-</button>
+                                    <button onClick={()=> {
+                                        if (product.quantity > 1){
+                                            dispatch({type: 'DECREASE', payload: product })
+                                        } else{
+                                            dispatch({type: 'REMOVE', payload: product })
+                                        }
+                                        }}
+                                        className='btn-add-sub'>-</button>
                                     <div>
-                                        <p>{`$ {cantidad}`}</p>
+                                        <p>{product.quantity}</p>
                                     </div>
-                                    <button className='btn-add-sub'>+</button>
+                                    <button onClick={()=>dispatch({type: 'INCREASE',payload: product })} className='btn-add-sub'>+</button>
                                 </div>
                             </div>
                         </div>
-                        <button className='delete-product'>X</button>
+                        <button onClick={() => dispatch({ type: 'REMOVE', payload: product })} className='delete-product'>X</button>
                     </div>)}
                 </section>
                 <section className='section-car-total'>
                     <div className='car-total'>
-                        <h5>{`Productos en el carrito: $ {#}`}</h5>
+                        <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
-                        <h4>{`$  $ {000.000}`}</h4>
-                        <a href="">CONTINUAR</a>
+                        <h4>$ {total}</h4>
+                        <button>CONTINUAR</button>
+                        {console.log(cart)}
                     </div>
                 </section>
             </main>
