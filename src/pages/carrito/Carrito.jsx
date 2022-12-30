@@ -30,6 +30,7 @@ function Carrito() {
             <Header />
             <main className="main main-car">
                 <section className='container-carrito'>
+                    {/* Cart Item */}
                     {cart.map((product) =>
                         <div className='p-car-container' key={product.id}>
                             <img src={product.image} alt="" className='img-card-car' />
@@ -59,6 +60,7 @@ function Carrito() {
                             <button onClick={() => dispatch({ type: 'REMOVE', payload: product })} className='delete-product'>X</button>
                         </div>)}
                 </section>
+                {/* Continue Purchase */}
                 <section className='section-car-total'>
                     <div className='car-total'>
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
@@ -71,8 +73,8 @@ function Carrito() {
                     </div>
                 </section>
             </main>
-            <Footer />
-            <NavBarMobile />
+            <div className='footer'><Footer/></div>
+            <NavBarMobile/>
         </>
     )
 }

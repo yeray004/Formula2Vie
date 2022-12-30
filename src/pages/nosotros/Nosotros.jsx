@@ -48,9 +48,10 @@ return (
             </div>
             <h3>TikTok</h3>
             <div>
-                <iframe src='https://widgets.sociablekit.com/tiktok-feed/iframe/107848' frameborder='0' width='290' height='300'></iframe>
+                <iframe src='https://widgets.sociablekit.com/tiktok-feed/iframe/107848' frameborder='0' width='290' height='300' title='TikTok'></iframe>
             </div>
         </section>
+        <div className='cover-footer'></div>
     </main>
     <Footer/>
     <NavBarMobile/>

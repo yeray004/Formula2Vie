@@ -9,6 +9,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    transition: ease-in-out .15s;
+    border: 2px solid var(--color-light-brown);
+}
+.product-card:hover{
+    box-shadow: 0px 1px 6px 1px rgba(223, 171, 0, 0.46);
+    -webkit-box-shadow: 0px 1px 6px 1px rgba(139, 139, 139, 0.4);
+    -moz-box-shadow: 0px 1px 6px 1px rgba(119, 119, 119, 0.46);
+    transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
 }
 .tittle-card{
     margin-bottom: 0%;
@@ -64,6 +74,11 @@
 .add-car{
     width: 37px;
     height: auto;
+    border-radius: 100px;
+    transition: ease .15s;
+}
+.add-car:hover{
+    box-shadow: 0px 0px 10px 3px rgba(113, 62, 0, 0.167);
 }
 @media (min-width: 1000px) {
     .product-card{

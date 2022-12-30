@@ -29,20 +29,11 @@ footer{
     display: flex;
     align-items: center;
 }
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
     footer{
-        bottom: 0%;
+        margin-bottom: 4.5em;
     }
-}
-@media (max-width: 520px) {
-/*     footer{
-        margin-bottom: 69px;
-    } */
-}
-@media (max-width: 425px) {
-/*     footer{
-        margin-bottom: 63.81px;
-    } */
     .footer-text{
         font-size: .5rem;
     }
@@ -51,5 +42,15 @@ footer{
     }
     .img-footer-2{
         width: 17px;
+    }
+}
+@media (max-width: 425px) {
+    footer{
+        margin-bottom: 4.2em;
+    }
+}
+@media (max-width: 375px) {
+    footer{
+        margin-bottom: 4em;
     }
 }
