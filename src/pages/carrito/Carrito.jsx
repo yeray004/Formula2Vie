@@ -66,7 +66,7 @@ function Carrito() {
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
                         <h4>$ {total}</h4>
-                        <ReactWhatsapp number="57-319-678-8028" message={`¡Hola! Estoy interesad@ en adquirir este/os productos 😄: ${cart.map((product) =>
+                        <ReactWhatsapp number="57-313-474-6663" message={`¡Hola! Estoy interesad@ en adquirir este/os productos 😄: ${cart.map((product) =>
                             product.quantity + " Unid. " + product.name
                         )} con un total de $${total} pesos`} >CONTINUAR</ReactWhatsapp>
                         <p className='small-whatsapp-message'>*Serás redireccionad@ a WhatsApp para terminar tu compra</p>
