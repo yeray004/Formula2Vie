@@ -1,4 +1,4 @@
-//Styles
+/* //Styles
 import './ProductCard.css'
 //img addItem
 import addBtn from '../nosotros/img-nosotros/addBtn.png'
@@ -30,4 +30,4 @@ return (
 )
 }
 
-export default ProductCard
+export default ProductCard */

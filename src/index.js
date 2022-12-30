@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import './index.css';
+import App from './App';
+
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 //Rutas
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -8,9 +11,13 @@ import Nosotros from './pages/nosotros/Nosotros'
 import Productos from './pages/productos/Productos'
 import Carrito from './pages/carrito/Carrito'
 
+//import redux
+import { createStore } from 'redux';
+import {Provider} from 'react-redux'
+//Import reducer component
+import Reducer from './components/Reducer';
+    const store= createStore(Reducer)
 
-import './index.css';
-import App from './App';
 
 const router = createBrowserRouter([
 {
@@ -37,6 +44,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <Provider store={store}>
+            <RouterProvider router={router} />
+        </Provider>
     </React.StrictMode>
 );
