@@ -4,6 +4,8 @@ import test from '../nosotros/img-nosotros/cremaParaPeinarRepasadora.jpg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import NavBarMobile from '../../components/NavBarMobile'
+//import from react
+import React from 'react'
 
 function Carrito() {
 return (

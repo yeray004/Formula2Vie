@@ -65,9 +65,14 @@
     width: 37px;
     height: auto;
 }
-@media (min-width: 2000px) {
+@media (min-width: 1000px) {
     .product-card{
         padding: 20px;
+        margin: 2%;
+    }
+}
+@media (min-width: 2000px) {
+    .product-card{
         margin: 50px;
     }
 }

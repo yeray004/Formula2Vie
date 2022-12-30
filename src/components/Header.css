@@ -29,8 +29,8 @@ header{
 }
 .img-header1 {
     position: absolute;
-    left: calc(50% - 35px);
-    width: 70px;
+    left: calc(50% - 25px);
+    width: 50px;
     height: auto;
 }
 .img-header2 {
@@ -47,7 +47,6 @@ header{
     }
     .img-header1 {
         position: relative;
-        left: 10%;
         width: 50px;
         height: auto;
     }

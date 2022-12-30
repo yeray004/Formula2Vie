@@ -14,10 +14,10 @@ function Productos() {
 
     const[data, setData] = useState(products);
 
-    const filterResult = (a)=>{
+    const filterResult = (typeOfCategory)=>{
         const result = products.filter(
             (curDate)=>{
-                return curDate.category === a
+                return curDate.category === typeOfCategory
             }
             );
             setData(result)

@@ -1,6 +1,9 @@
+//Styles
 import './ProductCard.css'
-
+//img addItem
 import addBtn from '../nosotros/img-nosotros/addBtn.png'
+
+
 
 function ProductCard(props) {
 return (

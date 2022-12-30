@@ -1,6 +1,7 @@
 import './Inicio.css'
 import carousel1 from './imgInicio/carousel1.jpg'
 import carousel2 from './imgInicio/carousel2.jpg'
+import carousel3 from './imgInicio/carousel3.jpg'
 import logoFormula2VieByAngiesWht from './imgInicio/logoFormula2VieByAngiesWht.png'
 import logoFormulaWht from './imgInicio/logoFormulaWht.png'
 import logoLabFormula2VieWht from './imgInicio/logoLabFormula2VieWht.png'
@@ -36,7 +37,7 @@ return (
                     <div className="hover-carousel">
                         <img src={logoLabFormula2VieWht} alt="" className="img-logo-carousel" />
                     </div>
-                    <img src={carousel1} className="d-block w-100" alt="..." />
+                    <img src={carousel3} className="d-block w-100" alt="..." />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -56,9 +57,9 @@ return (
         </div>
         {/* MAIN DESCRIPTION */}
         <section  className="main-description">
-            <h1 className="title-description">Descripción Principal</h1>
+            <h1 className="title-description">Formula2Vie</h1>
             <div className="desctription-cont">
-                <p className="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p className="text-description">Nuestra empresa de productos cosméticos se dedica a la creación y venta de una amplia gama de productos de belleza y cuidado personal de alta calidad. Nuestro objetivo es proporcionar a nuestros clientes productos innovadores y efectivos que mejoren su apariencia y bienestar. Contamos con un equipo de expertos en el campo de la cosmética que trabajan constantemente en el desarrollo de nuevos productos y en mejorar los ya existentes. Todo esto al alcance de tu bolsillo y a la venta con precios de fábrica.</p>
                 <div className="img-description"></div>
             </div>
         </section>
@@ -76,7 +77,7 @@ return (
                 <h3 className='grid-img-text'>Facial</h3>
                 </div>
             </div>
-            <div class="div3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+            <div class="div3"><p>Ofrecemos tres categorías principales de productos: productos capilares, productos corporales y productos faciales. Todos nuestros productos están hechos con ingredientes de alta calidad y naturales y son el resultado de años de investigación y desarrollo por parte de nuestro equipo Formula2Vie para que nuestros clientes cuenten con los mejores resultados gracias a nuestros productos de primera línea.</p></div>
         </section>
             <div className='button-products'>
                 <Link to='/productos'>
@@ -85,17 +86,15 @@ return (
             </div>
         {/* ADVANTAGE */}
         <section className='advantages'>
-            <h1 className='advantages-tittle'>Ventajas</h1>
+            <h1 className='advantages-tittle'>¡Ventajas al Preferirnos!</h1>
             <div className='advantages-ul-cont'>
                 <ul className='advantages-ul'>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
+                    <li>Ofrecemos una amplia gama de productos de alta calidad y efectivos para satisfacer todas las necesidades de belleza y cuidado personal de nuestros clientes.</li>
+                    <li>Utilizamos ingredientes de alta calidad y naturales en nuestros productos.</li>
                 </ul>
                 <ul className='advantages-ul'>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ut!</li>
+                    <li>Ofrecemos atención al cliente excepcional y estamos siempre dispuestos a ayudar a nuestros clientes a encontrar los productos adecuados para sus necesidades.</li>
+                    <li>Trabajamos con una red de distribuidores y minoristas de confianza para asegurarnos de que nuestros productos estén disponibles para todos nuestros clientes.</li>
                 </ul>
             </div>
         </section>
