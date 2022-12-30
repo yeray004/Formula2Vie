@@ -121,8 +121,3 @@ border-radius: 20px;
         width: 90%;
     }
 }
-
-/* Ig feed */
-.wx-footer a{
-    display: none !important;
-}

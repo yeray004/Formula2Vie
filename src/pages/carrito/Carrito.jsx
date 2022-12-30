@@ -7,62 +7,67 @@ import NavBarMobile from '../../components/NavBarMobile'
 import React from 'react'
 //import useSelector and useDispatch from redux
 import { useSelector, useDispatch } from 'react-redux'
+//import WhatsApp message
+import ReactWhatsapp from "react-whatsapp";
 
 function Carrito() {
-    //Reduce
+    //Array that creates each card of the cart
     const cart = useSelector((state) => state)
-    console.log(cart)
+    //console.log(cart)
     const dispatch = useDispatch()
-    
-    const addition = (acc, currentValue)=>{
+    //Function that calculates the total price of all items
+    const addition = (acc, currentValue) => {
         return acc + currentValue.price * currentValue.quantity
     }
-    const total=cart.reduce(addition, 0) 
-    
+    //Full price to pay
+    const total = cart.reduce(addition, 0)
+    //Var that count the total itenms in the cart
     let totalItems = 0;
-    //Total
-    cart.map((products)=>{totalItems += products.quantity});
+    //Function that creates the final result of the amount of items
+    cart.map((products) => { totalItems += products.quantity });
     return (
         <>
             <Header />
             <main className="main main-car">
                 <section className='container-carrito'>
-                {cart.map((product) =>
-                    <div className='p-car-container' key={product.id}>
-                        <img src={product.image} alt="" className='img-card-car' />
-                        <div className='flex-container'>
-                            <p>{product.name}</p>
-                            <div className='flex-sub-cont'>
-                                <div>
-                                    <p>{product.category}</p>
-                                    <p>$ {product.price * product.quantity}</p>
-                                </div>
-                                <div className='cont-buttons'>
-                                    <button onClick={()=> {
-                                        if (product.quantity > 1){
-                                            dispatch({type: 'DECREASE', payload: product })
-                                        } else{
-                                            dispatch({type: 'REMOVE', payload: product })
-                                        }
-                                        }}
-                                        className='btn-add-sub'>-</button>
+                    {cart.map((product) =>
+                        <div className='p-car-container' key={product.id}>
+                            <img src={product.image} alt="" className='img-card-car' />
+                            <div className='flex-container'>
+                                <p>{product.name}</p>
+                                <div className='flex-sub-cont'>
                                     <div>
-                                        <p>{product.quantity}</p>
+                                        <p>{product.category}</p>
+                                        <p>$ {product.price * product.quantity}</p>
                                     </div>
-                                    <button onClick={()=>dispatch({type: 'INCREASE',payload: product })} className='btn-add-sub'>+</button>
+                                    <div className='cont-buttons'>
+                                        <button onClick={() => {
+                                            if (product.quantity > 1) {
+                                                dispatch({ type: 'DECREASE', payload: product })
+                                            } else {
+                                                dispatch({ type: 'REMOVE', payload: product })
+                                            }
+                                        }}
+                                            className='btn-add-sub'>-</button>
+                                        <div>
+                                            <p><b>{product.quantity}</b></p>
+                                        </div>
+                                        <button onClick={() => dispatch({ type: 'INCREASE', payload: product })} className='btn-add-sub'>+</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <button onClick={() => dispatch({ type: 'REMOVE', payload: product })} className='delete-product'>X</button>
-                    </div>)}
+                            <button onClick={() => dispatch({ type: 'REMOVE', payload: product })} className='delete-product'>X</button>
+                        </div>)}
                 </section>
                 <section className='section-car-total'>
                     <div className='car-total'>
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
                         <h4>$ {total}</h4>
-                        <button>CONTINUAR</button>
-                        {console.log(cart)}
+                        <ReactWhatsapp number="57-319-678-8028" message={`¡Hola! Estoy interesad@ en adquirir este/os productos 😄: ${cart.map((product) =>
+                            product.quantity + " Unid. " + product.name
+                        )} con un total de $${total} pesos`} >CONTINUAR</ReactWhatsapp>
+                        <p className='small-whatsapp-message'>*Serás redireccionad@ a WhatsApp para terminar tu compra</p>
                     </div>
                 </section>
             </main>
