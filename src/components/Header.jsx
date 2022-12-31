@@ -1,5 +1,6 @@
-//import components
+//Styles
 import './Header.css'
+//import images
 import logoFormula2Vie from './img/logoFormula2Vie.png'
 import shoppingCar from './img/shoppingCar.png'
 
