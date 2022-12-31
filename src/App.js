@@ -1,7 +1,9 @@
+//import react
 import React from 'react';
-//-----------------------------------------PAGES
+//-----------------------------------------Component
 import Inicio from './pages/inicio/Inicio'
 
+//App function / Component
 function App() {
   return (
     <>
@@ -9,5 +11,5 @@ function App() {
     </>
   );
 }
-
+//Export Apps by default
 export default App;

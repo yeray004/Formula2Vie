@@ -1,3 +1,4 @@
+//Styles
 import './Carrito.css'
 //Components
 import Header from '../../components/Header'
@@ -6,12 +7,15 @@ import NavBarMobile from '../../components/NavBarMobile'
 //import from react
 import React from 'react'
 //import useSelector and useDispatch from redux
+//useDispatch for consuming our actions <-------> useDispatch(function())
+//useSelector for consume or read and objetc or function
 import { useSelector, useDispatch } from 'react-redux'
 //import WhatsApp message
 import ReactWhatsapp from "react-whatsapp";
 
+//Carrito function / Component
 function Carrito() {
-    //Array that creates each card of the cart
+    //Call the information of the store
     const cart = useSelector((state) => state)
     //console.log(cart)
     const dispatch = useDispatch()
@@ -27,10 +31,12 @@ function Carrito() {
     cart.map((products) => { totalItems += products.quantity });
     return (
         <>
+            {/* Header component */}
             <Header />
             <main className="main main-car">
                 <section className='container-carrito'>
                     {/* Cart Item */}
+                    {/* In this part we maps all our products and use the props to generate each of the cards */}
                     {cart.map((product) =>
                         <div className='p-car-container' key={product.id}>
                             <img src={product.image} alt="" className='img-card-car' />
@@ -42,6 +48,7 @@ function Carrito() {
                                         <p>$ {product.price * product.quantity}</p>
                                     </div>
                                     <div className='cont-buttons'>
+                                        {/* First event related to file Reducer.js (second and last case) */}
                                         <button onClick={() => {
                                             if (product.quantity > 1) {
                                                 dispatch({ type: 'DECREASE', payload: product })
@@ -53,10 +60,12 @@ function Carrito() {
                                         <div>
                                             <p><b>{product.quantity}</b></p>
                                         </div>
+                                        {/* Second event related to file Reducer.js (third case) */}
                                         <button onClick={() => dispatch({ type: 'INCREASE', payload: product })} className='btn-add-sub'>+</button>
                                     </div>
                                 </div>
                             </div>
+                            {/* Third event related to file Reducer.js (second case) */}
                             <button onClick={() => dispatch({ type: 'REMOVE', payload: product })} className='delete-product'>X</button>
                         </div>)}
                 </section>
@@ -66,17 +75,20 @@ function Carrito() {
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
                         <h4>$ {total}</h4>
-                        <ReactWhatsapp number="57-313-474-6663" message={`¡Hola! Estoy interesad@ en adquirir este/os productos 😄: ${cart.map((product) =>
+                        {/* Message generator sent to WhatsApp with a list with purchase details */}
+                        <ReactWhatsapp number="57-313-474-6663" message={`¡Hola! Estoy interesad@ en adquirir este/os productos: ${cart.map((product) =>
                             product.quantity + " Unid. " + product.name
                         )} con un total de $${total} pesos`} >CONTINUAR</ReactWhatsapp>
                         <p className='small-whatsapp-message'>*Serás redireccionad@ a WhatsApp para terminar tu compra</p>
                     </div>
                 </section>
             </main>
+            {/* Footer component */}
             <div className='footer'><Footer/></div>
+            {/* NavBarMobile component */}
             <NavBarMobile/>
         </>
     )
 }
-
+//Export Carrito by default
 export default Carrito

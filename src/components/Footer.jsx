@@ -1,9 +1,12 @@
+//Styles
 import './Footer.css'
+//Import images for footer
 import TIKTOK from './img/TIKTOK.png'
 import IG from './img/IG.png'
 import FACE from './img/FACE.png'
 import yerayGuacheta from './img/yerayGuacheta.png'
 
+//Footer function
 function Footer() {
 return (
     <footer>
@@ -18,4 +21,5 @@ return (
         </div>
     </footer>
 )}
+//Extport footer by default
 export default Footer

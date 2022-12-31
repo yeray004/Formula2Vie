@@ -1,4 +1,6 @@
+//Styles
 import './Inicio.css'
+//import images
 import carousel1 from './imgInicio/carousel1.jpg'
 import carousel2 from './imgInicio/carousel2.jpg'
 import carousel3 from './imgInicio/carousel3.jpg'
@@ -12,10 +14,11 @@ import NavBarMobile from '../../components/NavBarMobile'
 //Import link navegation router
 import { Link } from 'react-router-dom'
 
-
+//Inicio function / Component
 function Inicio() {
 return (
     <>
+    {/* Header component */}
     <Header/>
     <main className="main">
         {/* CAROUSEL */}
@@ -23,21 +26,21 @@ return (
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <div className="hover-carousel">
-                        <img src={logoFormula2VieByAngiesWht} alt="" className="img-logo-carousel" />
+                        <img src={logoFormula2VieByAngiesWht} alt="LogoFormula2Vie" className="img-logo-carousel" />
                     </div>
-                    <img src={carousel1} className="d-block w-100" alt="..." />
+                    <img src={carousel1} className="d-block w-100" alt="Imagen del carrusel" />
                 </div>
                 <div className="carousel-item">
                     <div className="hover-carousel">
-                        <img src={logoFormulaWht} className="img-logo-carousel" alt="LogoFormula2Vie"/>
+                        <img src={logoFormulaWht} alt="LogoFormula2Vie" className="img-logo-carousel" />
                     </div>
-                    <img src={carousel2} className="d-block w-100" alt="..." />
+                    <img src={carousel2} className="d-block w-100" alt="Imagen del carrusel" />
                 </div>
                 <div className="carousel-item">
                     <div className="hover-carousel">
-                        <img src={logoLabFormula2VieWht} alt="" className="img-logo-carousel" />
+                        <img src={logoLabFormula2VieWht} alt="LogoFormula2Vie" className="img-logo-carousel" />
                     </div>
-                    <img src={carousel3} className="d-block w-100" alt="..." />
+                    <img src={carousel3} className="d-block w-100" alt="Imagen del carrusel" />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -51,6 +54,7 @@ return (
         </section>
         {/* BUTTON "VER CATÁLOGO" */}
         <div className="bknd-button-catalogue">
+            {/* Link that redirects to the products component */}
             <Link to='/productos'>
                 <button className="button-catalogue">VER CATÁLOGO</button>
             </Link>
@@ -80,6 +84,7 @@ return (
             <div class="div3"><p>Ofrecemos tres categorías principales de productos: productos capilares, productos corporales y productos faciales. Todos nuestros productos están hechos con ingredientes de alta calidad y naturales y son el resultado de años de investigación y desarrollo por parte de nuestro equipo Formula2Vie para que nuestros clientes cuenten con los mejores resultados gracias a nuestros productos de primera línea.</p></div>
         </section>
             <div className='button-products'>
+                {/* Link that redirects to the products component */}
                 <Link to='/productos'>
                     <button className='button-catalogue'>PRODUCTOS</button>
                 </Link>
@@ -99,10 +104,12 @@ return (
             </div>
         </section>
     </main>
+    {/* Footer component */}
     <Footer/>
+    {/* NavBarMobile component */}
     <NavBarMobile/>
     </>
 )
 }
-
+//Export Inicio by default
 export default Inicio
