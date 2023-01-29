@@ -1,11 +1,11 @@
-//Create a function called 'Reducer' that takes a current tate and and action and retrns the next state
+//Create a function called 'Reducer' that takes a current state and and action and retrns the next state
 //In this case the current state is the the array cart[]
-//The function checks the  'type' property of the 'action' object and executes a different block of code based on the value of 'type'.
+//The function checks the 'type' property of the 'action' object and executes a diferent block of code based on the value of 'type'.
 const Reducer = (cart=[], action) => {
     //if the first event rerurns 'ADD'
     if (action.type === 'ADD'){
         //the function filter the cart array until find the product.id
-        let tempcraft=cart.filter((product)=>product.id===action.payload.id)
+        let tempcraft = cart.filter((product)=>product.id === action.payload.id)
         //if the function doesn't find the product indide the cart array, adds the product in the 'payload' property to the 'cart'. 
         if(tempcraft < 1){
             return [...cart, action.payload]
@@ -15,7 +15,7 @@ const Reducer = (cart=[], action) => {
         }
     }//if the event rerurns 'REMOVE'
     if (action.type === 'REMOVE'){
-        //filters the cart array and delete the objects whith the same id of the product in the 'payload'. Finally update de array
+        //filters the cart array and delete the objects whith the same id of the product in the 'payload'. Finally update the array
         return cart.filter((product) => product.id !== action.payload.id);
     }//if the event rerurns 'INCREASE'
     if(action.type ==='INCREASE'){

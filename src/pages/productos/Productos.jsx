@@ -13,6 +13,8 @@ import NavBarMobile from '../../components/NavBarMobile'
 import { useState } from 'react'
 //import useSelector and useDispatch from redux
 import { useDispatch } from 'react-redux'
+// import number format of the prices
+import {numberF} from '../../App'
 
 
 //Productos function / Component
@@ -70,7 +72,7 @@ function Productos() {
                                     <div className='price'>
                                         <div>
                                             <p>{product.category}</p>
-                                            <p>$ {product.price}</p>
+                                            <p>$ {numberF.format(product.price)}</p>
                                         </div>
                                         <div>
                                             {/* Event related to file Reducer.js (first case) */}
