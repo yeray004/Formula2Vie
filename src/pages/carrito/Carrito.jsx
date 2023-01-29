@@ -12,6 +12,9 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 //import WhatsApp message
 import ReactWhatsapp from "react-whatsapp";
+// import number format of the prices
+import {numberF} from '../../App'
+
 
 //Carrito function / Component
 function Carrito() {
@@ -28,7 +31,7 @@ function Carrito() {
     //Var that count the total itenms in the cart
     let totalItems = 0;
     //Function that creates the final result of the amount of items
-    cart.map((products) => { totalItems += products.quantity });
+    cart.map((products) => { totalItems += products.quantity });    
     return (
         <>
             {/* Header component */}
@@ -38,14 +41,14 @@ function Carrito() {
                     {/* Cart Item */}
                     {/* In this part we maps all our products and use the props to generate each of the cards */}
                     {cart.map((product) =>
-                        <div className='p-car-container' key={product.id}>
+                        <div className='p-car-container ifCard' key={product.id}>
                             <img src={product.image} alt="" className='img-card-car' />
                             <div className='flex-container'>
                                 <p>{product.name}</p>
                                 <div className='flex-sub-cont'>
                                     <div>
                                         <p>{product.category}</p>
-                                        <p>$ {product.price * product.quantity}</p>
+                                        <p>$ { numberF.format(product.price * product.quantity)}</p>
                                     </div>
                                     <div className='cont-buttons'>
                                         {/* First event related to file Reducer.js (second and last case) */}
@@ -71,14 +74,14 @@ function Carrito() {
                 </section>
                 {/* Continue Purchase */}
                 <section className='section-car-total'>
-                    <div className='car-total'>
+                    <div className='car-total ifPurchase'>
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
-                        <h4>$ {total}</h4>
+                        <h4>$ {numberF.format(total)}</h4>
                         {/* Message generator sent to WhatsApp with a list with purchase details */}
                         <ReactWhatsapp number="57-313-474-6663" message={`¡Hola! Estoy interesad@ en adquirir este/os productos: ${cart.map((product) =>
                             product.quantity + " Unid. " + product.name
-                        )} con un total de $${total} pesos`} >CONTINUAR</ReactWhatsapp>
+                        )} con un total de $${numberF.format(total)} pesos`} >CONTINUAR</ReactWhatsapp>
                         <p className='small-whatsapp-message'>*Serás redireccionad@ a WhatsApp para terminar tu compra</p>
                     </div>
                 </section>
